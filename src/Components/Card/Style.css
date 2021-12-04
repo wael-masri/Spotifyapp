@@ -1,0 +1,34 @@
+.card_title {
+  min-height: 150px;
+}
+.wraplink_card {
+  color: inherit;
+  text-decoration: none;
+}
+.innerdate_track {
+  padding: 0px 12px !important;
+  margin: 0px !important;
+  color: rgba(0, 0, 0, 0.6);
+}
+.boxdate_track {
+  margin: 5px 0px;
+}
+.card_title2 {
+  min-height: 150px;
+}
+.title_card2 {
+  font-size: 20px !important;
+}
+.btn_card2 {
+  background: #111111;
+  color: #ffffff;
+}
+.btn_card2:hover {
+  background: grey;
+  color: #ffffff;
+}
+.href_buttoncard2 {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+}

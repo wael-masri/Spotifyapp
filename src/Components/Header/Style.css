@@ -1,0 +1,25 @@
+.navbar_custom {
+  background: #d8d8d8;
+  width: 100%;
+}
+.inner_nav_text {
+  color: #111111;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+.inner_nav_text:hover {
+  color: #111111;
+  text-decoration: none;
+}
+.btn_logout {
+  float: right;
+  background: #111111;
+  color: #fff;
+  font-weight: 700;
+}
+.btn_logout:hover {
+  background: grey;
+  color: #fff;
+}

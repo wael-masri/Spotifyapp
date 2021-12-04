@@ -1,0 +1,23 @@
+.searchinput {
+  width: 50%;
+  height: 50px;
+  border-radius: 7px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.buttonsearch {
+  position: relative;
+  left: -40px;
+  font-size: 30px !important;
+}
+@media only screen and (max-width: 991px) {
+    .searchinput {
+        width: 90% !important;
+       
+      }
+      .searchinput:focus {
+        border: 1px solid rgba(0, 0, 0, 0.6) !important;
+       
+      }
+  }

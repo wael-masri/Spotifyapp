@@ -1,0 +1,10 @@
+
+.subtitle{
+    color:rgba(0, 0, 0, 0.6)
+}
+.circular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
