@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,8 +12,9 @@ import { getTokenFromUrl } from "./Spotify/Index";
 import { isLogin, login } from "./Utils/Tools";
 
 function App() {
-  const [token, setToken] = useState(null);
+  const [token, setToken] = useState(null)
   useEffect(() => {
+
     const hash = getTokenFromUrl();
     window.location.hash = "";
     const tokenurl = hash.access_token;
@@ -22,7 +23,7 @@ function App() {
       localStorage.setItem("tokenurl", tokenurl);
       login();
     }
-  }, []);
+  }, [token]);
 
   const publicRoute = () => {
     return (

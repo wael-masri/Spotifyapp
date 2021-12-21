@@ -8,26 +8,28 @@ import Box from "@mui/material/Box";
 
 const ArtistsAlbums = () => {
   const location = useLocation();
+  const id = location.state.id;
   const [listdataalbums, setListdataalbums] = useState([]);
 
-  const getDataAlbums = async () => {
-    const newAccessToken = await localStorage.getItem("tokenurl");
-    const res = await axios.get(
-      `https://api.spotify.com/v1/artists/${location.state.id}/albums`,
-      {
-        headers: {
-          Accept: "application/json",
-          Authorization: "Bearer " + newAccessToken,
-          "Content-Type": "application/json",
-        },
-      }
-    );
-    res && setListdataalbums(res.data.items);
-    console.log(res.data.items);
-  };
   useEffect(() => {
+    const getDataAlbums = async () => {
+      if (id) {
+        const newAccessToken = localStorage.getItem("tokenurl");
+        const res = await axios.get(
+          `https://api.spotify.com/v1/artists/${id}/albums`,
+          {
+            headers: {
+              Accept: "application/json",
+              Authorization: "Bearer " + newAccessToken,
+              "Content-Type": "application/json",
+            },
+          }
+        );
+        res && setListdataalbums(res.data.items);
+      }
+    };
     getDataAlbums();
-  }, []);
+  }, [id]);
 
   //RUNNING
   return (

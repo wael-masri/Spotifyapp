@@ -7,9 +7,9 @@ const FormLogin = () => {
   return (
     <div className="login_container">
       <button className="btn btn_Login">
-        <a href={URL_AUTH} className="linkhreflogin">
+        <a  className="linkhreflogin" href={URL_AUTH}>
           Login
-          <img src={logospotify} className="spotify_logo" />
+          <img src={logospotify} alt="artist" className="spotify_logo" />
         </a>
       </button>
     </div>

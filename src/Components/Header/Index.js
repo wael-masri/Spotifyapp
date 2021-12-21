@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar_custom">
       <div className="container">
-        <Link className="navbar-brand" to="#" className="inner_nav_text">
+        <Link to="#" className=" navbar-brand inner_nav_text">
           Spotify Artist Search
         </Link>
         {isLogin() && (

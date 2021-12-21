@@ -1,7 +1,7 @@
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import "./Style.css";
-const SearchItem = ({ setArtistname, getDataSearching }) => {
+const SearchItem = ({ setArtistname }) => {
   return (
     <>
       <input
@@ -10,7 +10,7 @@ const SearchItem = ({ setArtistname, getDataSearching }) => {
         onChange={(e) => setArtistname(e.target.value)}
         className="searchinput"
       />
-      <SearchIcon onClick={() => getDataSearching()} className="buttonsearch" />
+      <SearchIcon className="buttonsearch" />
     </>
   );
 };
